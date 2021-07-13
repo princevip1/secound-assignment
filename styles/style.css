@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* -------------------------
+     Common Styles
+------------------------------ */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.all-btn{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*----------------------------
+     navber styles 
+-------------------------------*/
+.navber{
+    display: flex;
+    justify-content: space-around;
+    background-color: #2D25A0;
+}
+.all-menu, .login-btn{
+    margin-top: 42px;
+}
+.all-menu a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 36px;
+    color: white;
+}
+/* ---------------------------
+    top banner section start 
+---------------------------------*/
+.top-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#2D25A0;
+}
+
+.top-banner-title{
+    font-size: 64px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.top-banner:hover .top-banner-img{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.top-banner-contant{
+    display: flex;
+    width: 1144px;
+    justify-content: center;
+    align-items: center;
+    margin: 135px 140px 86px 156px;
+}
+
+.top-banner-img img{
+    width:556px;
+    height: 438px;
+}
+/*-------------------------------
+     All Player style 
+----------------------------------*/
+.all-player-list{ 
+    margin-top: 60px; 
+}
+
+.all-palyers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    align-items: center;
+}
+
+.single-player{
+    
+    width: 330px;
+    height: 474px;
+    box-shadow: 5px 5px 30px lightgray;
+}
+
+.single-player .player-thambnail img{
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+}
+
+.player-name{
+    font-size: 28px;
+    color: #18191F;
+    margin: 0;
+}
+
+.player-info{
+    margin:0px 15px 15px 15px;
+}
+
+.player-info p {
+   color: #6C6C6C;
+   font-size: 16px;
+   margin: 0;
+}
+
+/*------------------------------------
+     heighlight section style 
+--------------------------------------- */
+
+.highlight-section{
+    display: flex;
+    width: 1102px;
+    justify-content: center;
+    align-items: center;
+    margin: 155px 140px 86px 156px;
+}
+.highlight-title{
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+}
+.highlight-text p{
+    font-size: 16px;
+    color: #6C6C6C;
+    margin-bottom: 34px;
+    
+}
+.highlight-section .highlight-thambnail img{
+    width: 567px;
+    height: 427px;
+}
+/*---------------------------------
+     footer section  
+------------------------------------*/
+.footer-section{
+    text-align: center;
+}
+
+.footer-section .footer-image img {
+    width: 483.87px;
+    height: 110px;
+}
+
+.social-icon{
+    padding: 8px;
+    border-radius: 15px;
+    background-color: #e3e4e9;
+    color: #969BAB;
+    font-size: 17.07px;
+    margin-left: 14px;
+}
+
+.copyright{
+    font-size: 18px;
+}
