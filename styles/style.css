@@ -68,7 +68,7 @@ main{
     width: 1144px;
     justify-content: center;
     align-items: center;
-    margin: 135px 140px 86px 156px;
+    margin: 39px 140px 86px 156px;
 }
 
 .top-banner-img img{
@@ -174,8 +174,23 @@ main{
 }
 .highlight-section .highlight-thambnail img{
     width: 567px;
-    height: 427px;
 }
+
+/* ---------------------------------
+     fifa partners section 
+------------------------------------ */
+.fifa-partners{
+    text-align: center;
+    margin-bottom: 50px;
+}
+hr .top-line{
+    border-top: 5px solid red;
+}
+.all-partner img{
+    margin-right: 70px;
+    margin-bottom: 30px;
+}
+
 /*---------------------------------
      footer section  
 ------------------------------------*/
@@ -188,13 +203,10 @@ main{
     height: 110px;
 }
 
-.social-icon{
-    padding: 8px;
-    border-radius: 15px;
-    background-color: #e3e4e9;
-    color: #969BAB;
-    font-size: 17.07px;
-    margin-left: 14px;
+.footer-icon img{
+    width: 32px;
+    height: 32px;
+    margin-right: 14px;
 }
 
 .copyright{
@@ -202,41 +214,77 @@ main{
 }
 
 /* ------------------------------
-    reponsive css 
+    reponsive css mobile
 ----------------------------------*/
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:767px) {
+    header{
+        display: none;
+    }
     .top-banner-contant{
         width: 100%;
         display: block;
     }
-.top-banner-contant .top-banner-img img{
-        width: 90%;
+    .top-banner-contant .top-banner-img img{
+        width: 100%;
         margin-top: 50px;
     }
     .all-palyers{
         grid-template-columns: repeat(1, 1fr);
     }
+    .ranking-title{
+        width: 100%;
+    }
     .all-countries{
         grid-template-columns: repeat(1, 1fr);
     }
     .single-countries, .country-flag img{
-        width: 90%;
+        width: 100%;
         ;
     }
     .highlight-text{
-        height: 550px;
-        width: 250px;
+        margin: 20px;
     }
     .highlight-section{
-        width: 90%;
+        width: 100%;
         display: block;
+        margin: 0;
     }
     .highlight-section .highlight-thambnail img{
-        width: 80%
-    };
-    .footer-section .footer-image img{
-        width: 80%;
+        width: 100%;
     }
-    
+    .footer-section .footer-image img {
+        width: 100%;
+    }
+}
+
+/* ------------------------------
+    reponsive css Tab
+----------------------------------*/
+@media only screen and (min-width:768px) and (max-width:1024px){
+    .top-banner-contant{
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .top-banner-contant .top-banner-img {
+        width: 100%;
+        margin: 50px 20px 20px 80px;
+    }
+    .all-palyers{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .all-countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .highlight-section{
+        width: 100%;
+        display: block;
+        margin: 0;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .highlight-section .highlight-thambnail img{
+        margin-top: 50px;
+    }
     
 }
