@@ -228,7 +228,7 @@ hr{
         display: block;
     }
     .top-banner-text{
-        margin-left: 20px;
+        text-align: center;
     }
     .top-banner-contant .top-banner-img img{
         width: 300px;
@@ -281,6 +281,9 @@ hr{
         width: 100%;
         display: block;
         margin: 0;
+    }
+    .top-banner-text{
+        text-align: center;
     }
     .top-banner-contant .top-banner-img {
         width: 100%;
