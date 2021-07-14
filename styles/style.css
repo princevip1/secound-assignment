@@ -19,6 +19,11 @@ main{
     flex-direction: column;
     align-items: center;
 }
+.medium-title{
+    font-weight: bold;
+    font-size: 48px;
+    margin: 0;
+}
 /*----------------------------
      navber styles 
 -------------------------------*/
@@ -113,6 +118,41 @@ main{
    font-size: 16px;
    margin: 0;
 }
+/*------------------------------------
+     world ranking styles 
+----------------------------------------*/
+.ranking-title{
+    text-align: center;
+    margin-top: 100px;
+}
+.all-countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap:20px ;
+}
+.single-countries{
+    box-shadow: 5px 5px 30px lightgray;
+    overflow: hidden;
+}
+.country-flag img{
+    height: 174px;
+    width: 280px;
+    padding: 10px;
+    
+}
+.single-countries:hover .country-flag{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+.country-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+}
 
 /*------------------------------------
      heighlight section style 
@@ -125,11 +165,7 @@ main{
     align-items: center;
     margin: 155px 140px 86px 156px;
 }
-.highlight-title{
-    font-weight: bold;
-    font-size: 48px;
-    margin: 0;
-}
+
 .highlight-text p{
     font-size: 16px;
     color: #6C6C6C;
@@ -163,4 +199,44 @@ main{
 
 .copyright{
     font-size: 18px;
+}
+
+/* ------------------------------
+    reponsive css 
+----------------------------------*/
+@media only screen and (max-width:480px) {
+    .top-banner-contant{
+        width: 100%;
+        display: block;
+    }
+.top-banner-contant .top-banner-img img{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .all-palyers{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .all-countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .single-countries, .country-flag img{
+        width: 90%;
+        ;
+    }
+    .highlight-text{
+        height: 550px;
+        width: 250px;
+    }
+    .highlight-section{
+        width: 90%;
+        display: block;
+    }
+    .highlight-section .highlight-thambnail img{
+        width: 80%
+    };
+    .footer-section .footer-image img{
+        width: 80%;
+    }
+    
+    
 }
