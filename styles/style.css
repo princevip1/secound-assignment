@@ -227,18 +227,26 @@ hr{
         width: 100%;
         display: block;
     }
+    .top-banner-text{
+        margin-left: 20px;
+    }
     .top-banner-contant .top-banner-img img{
-        width: 100%;
+        width: 300px;
+        height: 250px;
         margin-top: 50px;
+        margin-left: 25px;
     }
     .all-palyers{
         grid-template-columns: repeat(1, 1fr);
+        
     }
     .ranking-title{
         width: 100%;
     }
     .all-countries{
         grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+        margin-left: 25px;
     }
     .single-countries, .country-flag img{
         width: 100%;
@@ -257,6 +265,8 @@ hr{
     }
     .all-partner{
         width: 90%;
+        margin-right: 0;
+        margin-left: 60px;
     }
     .footer-section .footer-image img {
         width: 100%;
